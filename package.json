@@ -1,0 +1,12 @@
+{
+  "name": "estratosfera",
+  "version": "0.0.1",
+  "description": "a japon en una hora",
+  "main": "server.js",
+  "scripts": {
+
+    "start": "node server.js"
+  },
+  "author": "Dr. Tomas Jaratz",
+  "license": "ISC"
+}
