@@ -2,8 +2,7 @@ var http = require("http");
 
 var server = http.createServer();
 server.on("request", function(req, res){
-  var urtDara = url.parse(req.url, true);
-  console.log(urlData);
+
   var date = new Date();
   var current_hour = date.getHours();
   var current_min = date.getMinutes();
@@ -11,4 +10,4 @@ server.on("request", function(req, res){
 
 
 });
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
