@@ -12,7 +12,7 @@ server.on("request", function(req, res){
   }
 
   var absPath = "./" + filePath;
-  serverWorking(res. absPath);
+  serverWorking(res, absPath);
 
 
 });
