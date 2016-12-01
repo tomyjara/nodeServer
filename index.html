@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+   <script src="js/clases.js" ></script>
+           <script type="text/javascript" src="js/main.js" ></script>
+
+ 	<title> NBA Store</title>
+
+ </head>
+
+ <body style="background-color:green;">
+ 	<h1 style="background-color:red;">Articulos Disponibles:</h1>
+  <button type = "button"
+onclick ="document.getElementById('test').innerHTML = Date()">
+  Time.</button>
+  <p id ="test"></p>
+  <button type ="button"
+  onclick="document.getElementById('sube').innerHTML = 'sube + 1'">
+  Subee.</button>
+  <p id="sube"></p>
+  <button
+    onclick="document.getElementById('imagen1').src='img/imagenOne.jpg'">Imagen 1
+  </button>
+
+ <img id="imagen1"
+  src="img/imagenOne.jpg"
+  style="width:100px">
+
+  <button onclick="document.getElementById('imagen1').src='img/imagen2.jpg'">Imagen 2</button>
+
+
+<center><button
+    onclick="ManejadorDeArticulos.render('noticia')">Siguiente Noticia
+  </button></center>
+
+
+
+  <ul id='noticia'>
+
+  </ul>
+
+
+
+
+ 	<ul>
+ 		<li><a href="currypfrio.html"> Curry Lesionado</a></li>
+ 		<li>Gorra Cavaliers Champions</li>
+ 		<li>Pisa papeles de los Bulls</li>
+  </ul>
+<!--
+  <center><button
+      onclick="ManejadorDeArticulos.renderPager('articulo')">Siguiente Pagina de Articulos
+    </button></center>
+
+    <article id='articulos'></article>
+-->
+ </body>
+
+
+</html>
