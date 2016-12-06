@@ -8,15 +8,15 @@ var Articulo = function(titulo, contenido, id){
 }
 
 Articulo.prototype.render = function(){
-	return '<article><div><h3>' + this.titulo + '</h3></div><div><p>' + this.contenido + '</p></div></article>';
+	return '<center><article><div><h3>' + this.titulo + '</h3></div><div><p>' + this.contenido + '</p></div></article></center>';
 }
 
 var ManejadorDeArticulos = {};
 ManejadorDeArticulos.load = function(){
 this.articulos = []
-this.articulos.push(new Articulo('Titulo1', "<img src='img/arti1.jpg'>", '1'));
-this.articulos.push(new Articulo('Titulo2', "<img src='img/arti2.jpg'>", '2'));
-this.articulos.push(new Articulo('Titulo3', "<img src='img/arti3.jpg'>", '3'));
+this.articulos.push(new Articulo('Mad Max 1', "<img src='img/arti1.jpg'>", '1'));
+this.articulos.push(new Articulo('Mad Max 2', "<img src='img/arti2.jpg'>", '2'));
+this.articulos.push(new Articulo('Mad Max 3', "<img src='img/arti3.jpg'>", '3'));
 this.articulos.push(new Articulo('Titulo4', "<img src='img/arti1.jpg'>", '1'));
 this.articulos.push(new Articulo('Titulo5', "<img src='img/arti2.jpg'>", '2'));
 this.articulos.push(new Articulo('Titulo6', "<img src='img/arti3.jpg'>", '3'));

@@ -3,37 +3,35 @@
  <head>
 
    <script src="js/clases.js" ></script>
-           <script type="text/javascript" src="js/main.js" ></script>
-
- 	<title> NBA Store</title>
+   <script type="text/javascript" src="js/main.js" ></script>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 	<title> Cinefilia</title>
 
  </head>
 
  <body style="background-color:green;">
- 	<h1 style="background-color:red;">Articulos Disponibles:</h1>
-  <button type = "button"
-onclick ="document.getElementById('test').innerHTML = Date()">
-  Time.</button>
-  <p id ="test"></p>
-  <button type ="button"
-  onclick="document.getElementById('sube').innerHTML = 'sube + 1'">
-  Subee.</button>
-  <p id="sube"></p>
+   <div class="container text-center">
+   <nav class="navbar navbar-inverse">
+<h1 style="background-color:red;">Peliculas Exoticas:</h1>
+</nav>
+ 	</div>
+  <div class="container text-center">
   <button
-    onclick="document.getElementById('imagen1').src='img/imagenOne.jpg'">Imagen 1
+    onclick="document.getElementById('imagen1').src='img/brain.jpg'">Imagen 1
   </button>
 
  <img id="imagen1"
-  src="img/imagenOne.jpg"
+  src="img/brain.jpg"
   style="width:100px">
 
-  <button onclick="document.getElementById('imagen1').src='img/imagen2.jpg'">Imagen 2</button>
-
-
-<center><button
+  <button onclick="document.getElementById('imagen1').src='img/malo.jpg'">Imagen 2</button>
+</div>
+<div class="container text-center">
+<button
     onclick="ManejadorDeArticulos.render('noticia')">Siguiente Noticia
-  </button></center>
-
+  </button>
+</div>
 
 
   <ul id='noticia'>
